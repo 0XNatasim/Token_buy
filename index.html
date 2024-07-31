@@ -209,7 +209,7 @@
                     from: accounts[0],
                     value: web3.utils.toWei(ethAmount, 'ether')
                 });
-                const txLink = `<a href="https://etherscan.io/tx/${transaction.transactionHash}" target="_blank" class="transaction-link">Transaction Details</a>`;
+                const txLink = `<a href="https://sepolia.etherscan.io/tx/${transaction.transactionHash}" target="_blank" class="transaction-link">Transaction Details</a>`;
                 displayMessage('Transaction successful! ' + txLink, false);
             } catch (error) {
                 displayMessage('Transaction failed: ' + error.message, true);
